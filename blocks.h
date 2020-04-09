@@ -5,7 +5,7 @@ static const Block blocks[] = {
 
   {" ", "unreadmail 2>/dev/null",                                                          2,    0},
 	
-	{"🧠", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	4,		0},
+	{"", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	            4,		0},
 
 	{"🌡", "sensors | awk '/^temp1:/{print $2}'",				5,		0},
 
