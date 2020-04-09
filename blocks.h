@@ -1,7 +1,9 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{"", "sudo apt update && apt list --upgradable | sed 1d | wc -l",					600,		0},
+	{"勒", "apt list --upgradable 2>/dev/null | sed 1d | wc -l",					600,		0},
+
+  {" ", "unreadmail 2>/dev/null",                                                          2,    0},
 	
 	{"🧠", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	4,		0},
 
