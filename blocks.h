@@ -9,7 +9,7 @@ static const Block blocks[] = {
 
 	{"🌡", "sensors | awk '/^temp1:/{print $2}'",				5,		0},
 
-	{"", "date +\"%a %d/%m/%y %H:%M:%S\"",						1,		0},
+	{" ", "date +\"%d/%m/%y %H:%M:%S\"",						1,		0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
